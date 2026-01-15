@@ -1,0 +1,20 @@
+{
+  "name": "js-advanced",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manju-devv/JS-Learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manju-devv/JS-Learning/issues"
+  },
+  "homepage": "https://github.com/manju-devv/JS-Learning#readme",
+  "description": ""
+}

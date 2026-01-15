@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex ;align-items: center; justify-content: center;">
+      <h1
+        style="
+          background-color: skyblue;
+          padding: 0.5rem;
+          width: fit-content;
+          font-family: 'Courier New', Courier, monospace;
+          align-self: center;
+          font-size: 2rem;
+          border-radius: 7px;
+        "
+      >
+        Learning Prototypes
+      </h1>
+    </div>
+    <script>
+      const obj = {
+        name: "manju",
+        role: "developer",
+      };
+      console.log(obj);
+
+      const animal = {
+        eats: true,
+      };
+      const rabbit = {
+        jumps: true,
+      };
+      rabbit.__proto__ = animal; //sets rabbit.[[prototype]] = animal
+
+
+      class User{
+        constructor(name){
+          this.name = name;
+        }
+        get name(){
+          return this._name;
+        };
+        set name(val){
+          if(val.length < 4){
+            console.log("name too short");
+            return;
+          }
+          this._name = val;
+        };
+      }
+
+      let user = new User("manju");
+      console.log(user.name);
+      user.name = 'sasidhar'
+    </script>
+  </body>
+</html>
