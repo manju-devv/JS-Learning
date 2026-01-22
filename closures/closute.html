@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closures</title>
+  </head>
+  <body>
+    <h2>closures</h2>
+    <p>closures are function together bundled with lexical environment</p>
+    <script>
+      //function x(){
+      //  let a = 7;
+      //function y(){
+      //  console.log(a);
+      //}
+      // y()
+      //}
+      //x();
+      function x(y) {
+        var a = 9;
+        console.log(y);
+        y();
+      }
+      x(function y() {
+        console.log("hello world");
+      });
+    </script>
+  </body>
+</html>
