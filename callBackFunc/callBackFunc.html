@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call back function</title>
+    <style>
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("https://community-cdn-digitalocean-com.global.ssl.fastly.net/e5y5ptPSFg2LXVAtEYUBr1rx");
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px);
+        z-index: -1;
+      }
+      #countDisplay {
+        background-color: lightpink;
+        border: 1px dashed black;
+        padding: 2px 5px;
+        width: fit-content;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imagee">
+      <h1>Callback Functions</h1>
+      <p>
+        A callback function is a function passed into another function as an
+        argument, <br />
+        which is then invoked inside the outer function to complete some kind of
+        routine or action.
+      </p>
+      <h3 id="countDisplay">Count: 0</h3>
+      <button id="counter">Click</button>
+    </div>
+
+    <script src="callBackFunc.js"></script>
+  </body>
+</html>
