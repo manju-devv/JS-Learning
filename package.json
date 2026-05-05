@@ -16,5 +16,8 @@
     "url": "https://github.com/manju-devv/JS-Learning/issues"
   },
   "homepage": "https://github.com/manju-devv/JS-Learning#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
