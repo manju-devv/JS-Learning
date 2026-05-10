@@ -36,6 +36,7 @@ counter1();
 
 //this below code will not work as expected because the inner function is immediately invoked and it does not return the inner function to be called later
 //so the count variable will be reset to 8 every time the counter function is called
+
 // function counter() {
 //   var count = 8;
 //   return (function() {
@@ -44,12 +45,12 @@ counter1();
 //   })();
 // }
 
-// // const counter1 = counter();
-// // counter1();
-// // counter1();
-// counter();
-// counter();
-// counter();
+// const counter1 = counter();   //err
+// counter1();
+// counter1();
+// // counter();
+// // counter();
+// // counter();
 
 
 
@@ -114,6 +115,7 @@ function outerFunction() {
 const myInnerFunction = outerFunction();
 myInnerFunction(); // Logs: I am from outer function
 
+
 // After this point, if there are no references to myInnerFunction, both innerFunction and outerVariable can be garbage collected.
 
 
@@ -126,3 +128,25 @@ function a(){
 
 var res = a();
 res(); //and z is garbage collected as it is not used in inner function b()
+
+
+
+
+
+function scorePoint(playerName) {
+    let score = 0
+    return {
+        displayScore: function () {
+            console.log(`${playerName} has ${score} points`)
+        },
+        incScore: function(){
+            score++;
+        },
+        decScore: function(){
+            score--;
+        }
+    }
+} 
+
+const player1 = scorePoint('Vicky')
+const player2 = scorePoint('Leo')
